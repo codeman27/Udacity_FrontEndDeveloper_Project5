@@ -99,7 +99,7 @@ nav h1 a {
 }
 /* ====================== Map ====================== */
 #map {
-  height: 250px;
+  height: 150px;
   width: 100%;
   background-color: #ccc;
 }
@@ -127,11 +127,12 @@ nav h1 a {
   letter-spacing: 0;
   margin: 10px 5px 10px 5px;
   padding: 0 10px;
-  width: 165px;
+  width: 125px;
 }
 
 /* ====================== Restaurant Listing ====================== */
 #restaurants-list {
+	display: grid;
   background-color: #f3f3f3;
   list-style: outside none none;
   margin: 0;
@@ -267,8 +268,54 @@ nav h1 a {
 	font-size: 25px;
 }
 
+@media only screen and (min-width: 360px) {
+	.filter-options select {
+	  width: 165px;
+	}
+
+	#map {
+		height: 200px;
+	}
+}
+
 @media only screen and (min-width: 600px) {
-	nav h1 a {
-		color: blue;
+	#restaurants-list {
+		grid-template-columns: auto auto;
+	}
+
+	#map {
+	  height: 250px;
+	}
+
+	#restaurants-list li {
+	  min-height: 300px;
+	}
+}
+
+@media only screen and (min-width: 800px) {
+	#restaurants-list {
+		grid-template-columns: auto auto auto;
+	}
+
+	#map {
+	  height: 300px;
+	}
+
+	#restaurants-list li {
+	  min-height: 300px;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	#restaurants-list {
+		grid-template-columns: auto auto auto auto;
+	}
+
+	#map {
+	  height: 400px;
+	}
+
+	#restaurants-list li {
+	  min-height: 300px;
 	}
 }
