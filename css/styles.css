@@ -73,25 +73,21 @@ nav h1 a {
     background-color: #eee;
     margin: 0;
 }
-
 /* Display list items side by side */
 #breadcrumb li {
     display: inline;
 		font-size: 12px;
 }
-
 /* Add a slash symbol (/) before/behind each list item */
 #breadcrumb li+li:before {
     padding: 8px;
     color: black;
     content: "/\00a0";
 }
-
 /* Add a color to all links inside the list */
 #breadcrumb li a {
     color: #0275d8;
 }
-
 /* Add a color on mouse-over */
 #breadcrumb li a:hover {
     color: #01447e;
@@ -185,18 +181,6 @@ nav h1 a {
 
 /* ====================== Restaurant Details ====================== */
 
-.inside #map {
-	height: 400px;
-	width: 100%;
-	background-color: #ccc;
-}
-
-.inside #footer {
-  bottom: 0;
-  position: absolute;
-  width: 100%;
-}
-
 #restaurant-name {
   color: #f18200;
   font-family: Arial,sans-serif;
@@ -207,16 +191,13 @@ nav h1 a {
   text-transform: uppercase;
   line-height: 1.1;
 }
-
 #restaurant-img {
 	width: 100%;
 }
-
 #restaurant-address {
   font-size: 12pt;
   margin: 10px 0px;
 }
-
 #restaurant-cuisine {
   background-color: #333;
   color: #ddd;
@@ -237,7 +218,6 @@ nav h1 a {
 #reviews-container {
   padding: 30px 40px 80px;
 }
-
 #reviews-container h2 {
   color: #f58500;
   font-size: 24pt;
@@ -265,9 +245,8 @@ nav h1 a {
 }
 #restaurant-hours td {
   color: #666;
-	font-size: 25px;
+	font-size: 15px;
 }
-
 @media only screen and (min-width: 360px) {
 	.filter-options select {
 	  width: 165px;
@@ -282,13 +261,14 @@ nav h1 a {
 	#restaurants-list {
 		grid-template-columns: auto auto;
 	}
-
 	#map {
 	  height: 250px;
 	}
-
 	#restaurants-list li {
 	  min-height: 300px;
+	}
+	#restaurant-hours td {
+		font-size: 20px;
 	}
 }
 
@@ -296,13 +276,17 @@ nav h1 a {
 	#restaurants-list {
 		grid-template-columns: auto auto auto;
 	}
-
 	#map {
 	  height: 300px;
 	}
-
 	#restaurants-list li {
 	  min-height: 300px;
+	}
+	#restaurant-hours td {
+		font-size: 25px;
+	}
+	p {
+		font-size: 14pt;
 	}
 }
 
@@ -310,11 +294,9 @@ nav h1 a {
 	#restaurants-list {
 		grid-template-columns: auto auto auto auto;
 	}
-
 	#map {
 	  height: 400px;
 	}
-
 	#restaurants-list li {
 	  min-height: 300px;
 	}
