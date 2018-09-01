@@ -34,8 +34,8 @@ This is for the 5th project in the Udacity Front End Developer nanodegree.
 1. Fork and clone the starter repository. The code in this repository will serve as your baseline to begin development.
 2. You will need a MapBox API key. Replace the text <your MAPBOX API KEY HERE>inside of main.js with your key. MapBox API is free to use, without providing any payment information.
 3. Convert the provided site to use a responsive design.
-  > - Bootstrap and other CSS frameworks should not be used; all responsiveness should be done with CSS.
-    - Use appropriate document type declaration and viewport tags
+  - Bootstrap and other CSS frameworks should not be used; all responsiveness should be done with CSS.
+  - Use appropriate document type declaration and viewport tags
   - Create a responsive grid-based layout using CSS
   - Use media queries that provide fluid breakpoints across different screen sizes
   - Use responsive images that adjust for the dimensions and resolution of any mobile device
